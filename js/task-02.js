@@ -33,16 +33,17 @@ const ingredientsList = document.querySelector("#ingredients");
 
 const ingredientsAddingFunction = function (ingredients) {
   return ingredients.map((ingredient) => {
-    const listItem = document.createElement("li");
+    const listItem = document.createElement(`li`);
     listItem.textContent = ingredient;
     listItem.classList.add("item");
     return listItem;
-  })
-}
+  });
+};
+
 
 const newMarkup = ingredientsAddingFunction(ingredients);
+
 ingredientsList.append(...newMarkup);
-  
 
 // const ingredientsArray = ingredients.map((ingredient) => {
 //   const listItem = document.createElement("li");
