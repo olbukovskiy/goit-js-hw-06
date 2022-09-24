@@ -43,4 +43,5 @@ img {
 
 .gallery__item {
   flex-basis: calc((100% - 60px) / 3);
+  border-radius: 5px;
 }
