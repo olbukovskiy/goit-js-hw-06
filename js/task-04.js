@@ -18,15 +18,15 @@ const btnDecrement = document.querySelector('[data-action="decrement"]');
 let counter = document.querySelector("#value");
 let counterValue = 0;
 
-function btnIncrementFunc() {
+function handleIncrementClick() {
   counterValue += 1;
   counter.textContent = counterValue;
 }
 
-function btnDecrementFunc() {
+function handleDecrementClick() {
   counterValue -= 1;
   counter.textContent = counterValue;
 }
 
-btnIncrement.addEventListener("click", btnIncrementFunc);
-btnDecrement.addEventListener("click", btnDecrementFunc);
+btnIncrement.addEventListener("click", handleIncrementClick);
+btnDecrement.addEventListener("click", handleDecrementClick);
