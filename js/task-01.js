@@ -23,7 +23,7 @@ const subcategoryListHeadings = categories.querySelectorAll(".item h2");
 console.log("Number of categories: ", categoriesListItems.length);
 
 
-for (let i = 0; i < subcategoryListHeadings.length; i += 1) {
+for (let i = 0; i < categoriesListItems.length; i += 1) {
   const subcategoryListItems = categoriesListItems[i].querySelectorAll("ul li");
 
   console.log("Category: ", subcategoryListHeadings[i].textContent);
