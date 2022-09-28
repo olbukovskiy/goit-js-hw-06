@@ -9,11 +9,15 @@ const nameInput = document.querySelector("#name-input");
 const nameOutput = document.querySelector("#name-output");
 
 function handleAddingText(event) {
-  if (event.currentTarget.value && event.currentTarget.value !== " ") {
+  if (event.currentTarget.value) {
     nameOutput.textContent = event.currentTarget.value;
+<<<<<<< HEAD
   } else if (!event.currentTarget.value) {
     nameOutput.textContent = "Anonymous";
   }
 }
+=======
+  } }
+>>>>>>> 675c8beef240b098b5e316ae572e4018d9254088
 
 nameInput.addEventListener("input", handleAddingText);
