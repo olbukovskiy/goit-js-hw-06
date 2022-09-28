@@ -9,7 +9,7 @@ const nameInput = document.querySelector("#name-input");
 const nameOutput = document.querySelector("#name-output");
 
 function handleAddingText(event) {
-  if (event.currentTarget.value && event.currentTarget.value !== " ") {
+  if (event.currentTarget.value) {
     nameOutput.textContent = event.currentTarget.value;
   }
 }
