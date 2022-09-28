@@ -35,11 +35,10 @@ const formSubmitHandler = function (event) {
       [email.name]: email.value,
       [password.name]: password.value,
     });
+    event.currentTarget.reset();
   } else if (!email.value || !password.value) {
     alert("Увага! Всі поля повинні бути заповнені!");
   }
-
-  event.currentTarget.reset();
 };
 
 formTargeter.addEventListener("submit", formSubmitHandler);
