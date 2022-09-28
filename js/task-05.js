@@ -13,6 +13,6 @@ function handleAddingText(event) {
     nameOutput.textContent = event.currentTarget.value;
   } else if (!event.currentTarget.value) {
     nameOutput.textContent = "Anonymous";
-  }
+  } }
 
 nameInput.addEventListener("input", handleAddingText);
