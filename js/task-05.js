@@ -11,7 +11,10 @@ const nameOutput = document.querySelector("#name-output");
 function handleAddingText(event) {
   if (event.currentTarget.value) {
     nameOutput.textContent = event.currentTarget.value;
-  } else (nameOutput.textContent = "Anonymous")
-}
+  } 
+  
+  if (!event.currentTarget.value){
+  nameOutput.textContent = "Anonymous";
+  }
 
 nameInput.addEventListener("input", handleAddingText);
